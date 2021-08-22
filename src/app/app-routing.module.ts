@@ -1,3 +1,5 @@
+import { CoursePageComponent } from './colleges/course/course-page/course-page.component';
+import { CourseComponent } from './colleges/course/course.component';
 import { CollegesComponent } from './colleges/colleges.component';
 import { LandingPageComponent } from './home-page/landing-page/landing-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -9,7 +11,9 @@ const routes: Routes = [
   {
     path: "home", component: HomePageComponent, children: [
       { path: '', component: LandingPageComponent },
-      { path: 'colleges', component: CollegesComponent }
+      { path: 'colleges', component: CollegesComponent },
+      { path: 'colleges/:id', component: CourseComponent },
+      { path: 'colleges/:id/:id', component: CoursePageComponent },
     ]
   }
 ]

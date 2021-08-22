@@ -1,47 +1,10 @@
-<!-- <div class="card-wrapper col-4">
-          <div class="card">
-                    <div class="card-img-wrapper">
-                              <img class="card-img-top"
-                                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WzDoU2aaQf_kt_qcLCnZGWOZgtN2-TYFK-t8RAjTc5l5TAlnSXKJK8aO3kYF95bStxs&usqp=CAU"
-                                   alt="Card image cap">
-                    </div>
-                    
-                    <div class="card-body">
-                              <h5 class="card-title">{{college.name}}</h5>
-                              <div class="card-content">
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
-                                        <a href="#"
-                                           class="btn btn-primary">Go somewhere</a>
-                              </div>
-                    </div>
-          </div>
-</div> -->
-
-<!-- <div class="card-deck">
-   <div class="card">
-      <div class="card-body text-center">
-         <div class="col-12">
-            <div class="card-img-wrapper">
-               <img class="card-img-top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WzDoU2aaQf_kt_qcLCnZGWOZgtN2-TYFK-t8RAjTc5l5TAlnSXKJK8aO3kYF95bStxs&usqp=CAU"
-                    alt="Card image cap">
-            </div>
-
-            <div>
-               <h5 class="card-title">{{college.name}}</h5>
-               <p class="card-text">Width sup upporting text below as a </p>
-               <a href="#"
-                  class="btn btn-primary">Go somewhere</a>
-            </div>
-         </div>
-      </div>
-   </div>
-</div> -->
-
 <div class="row">
-   <div class="profile-card-6"><img src={{college.img}}
-           class="img img-responsive">
-      <div class="profile-name">{{college.name}} 
+   <div class="profile-card-6"
+        [routerLink]=[id]>
+      <img src={{college.img}}
+           class="img img-responsive"
+           style="width: 400px;">
+      <div class="profile-name">{{college.name}}
       </div>
       <div class="profile-position">{{college.title}}</div>
       <div class="profile-overview">

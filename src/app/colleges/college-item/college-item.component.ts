@@ -7,12 +7,15 @@ import { College } from 'src/app/models/college';
   styleUrls: ['./college-item.component.css']
 })
 export class CollegeItemComponent implements OnInit {
+  @Input() id: number
+  @Input() college: College = new College(0, "", "", "")
 
-  @Input() college: College = new College("", "", "")
-
-  constructor() { }
+  constructor() {
+    this.id = 0
+  }
 
   ngOnInit(): void {
+
   }
 
 }
