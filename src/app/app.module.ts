@@ -11,6 +11,7 @@ import { CourseComponent } from './colleges/course/course.component';
 import { CourseItemComponent } from './colleges/course/course-item/course-item.component';
 import { CoursePageComponent } from './colleges/course/course-page/course-page.component';
 import { CommentComponent } from './colleges/course/course-page/comment/comment.component';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CommentComponent } from './colleges/course/course-page/comment/comment.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
