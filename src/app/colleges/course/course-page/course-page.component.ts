@@ -16,10 +16,7 @@ export class CoursePageComponent implements OnInit {
 
   constructor() {
     this.comments = [
-      new CourseComment(0, 'Test', 'Test',''),
-      new CourseComment(1, 'Test', 'Test',''),
-      new CourseComment(2, 'Test', 'Test',''),
-      new CourseComment(3, 'Test', 'Test',''),
+      new CourseComment(0, 'Test', 'Test','')
     ]
 
   }

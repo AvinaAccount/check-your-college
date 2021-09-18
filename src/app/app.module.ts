@@ -12,6 +12,8 @@ import { CourseItemComponent } from './colleges/course/course-item/course-item.c
 import { CoursePageComponent } from './colleges/course/course-page/course-page.component';
 import { CommentComponent } from './colleges/course/course-page/comment/comment.component';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RegistrationComponent } from './login/registration/registration.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FormsModule, NgForm } from '@angular/forms';
     CourseItemComponent,
     CoursePageComponent,
     CommentComponent,
+    RegistrationComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

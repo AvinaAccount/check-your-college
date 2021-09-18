@@ -2,17 +2,19 @@ export class CourseComment {
           id: number
           userName: string
           contents: string
-          date: string 
+          email: string
 
           constructor(
                     id: number,
                     userName: string,
                     contents: string,
-                    date: string) {
+                    email: string
+          ) {
 
                     this.id = id,
-                    this.userName = userName,
-                    this.contents = contents,
-                    this.date = date
+                              this.userName = userName,
+                              this.contents = contents,
+                              this.email = email
+
           }
 }
